@@ -9,19 +9,19 @@ namespace CountCharsBonanza
     internal class BetterPerson
     {
         public string Name { get; private set; }
-        private int BirthYear;
+        private int _birthYear;
         private bool IsTeacher;
 
         public BetterPerson(string name, int birthYear)
         {
             Name = name;
-            BirthYear = birthYear;
+            _birthYear = birthYear;
             IsTeacher = false;
         }
 
         public void Show()
         {
-            Console.WriteLine($"Navn: {Name} Fødselsår: {BirthYear}");
+            Console.WriteLine($"Navn: {Name} Fødselsår: {_birthYear}");
         }
     }
 }
